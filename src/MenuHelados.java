@@ -7,11 +7,16 @@ public class MenuHelados {
             String helado;
 
             do {
-                System.out.println("Bienvenido a la heladería!");
+                System.out.println("Bienvenido a la heladería don Omar y Pepe!");
                 System.out.println("1. Helado de vainilla");
                 System.out.println("2. Helado de chocolate");
-                System.out.println("3. Helado de fresa");
-                System.out.println("4. Salir");
+                System.out.println("3. Helado de coco");
+                System.out.println("4. Helado de limon");
+                System.out.println("5. Helado de mango");
+                System.out.println("6. Helado de oreo");
+                System.out.println("7. Helado de Crema y galletas");
+                System.out.println("8. Helado de Chispas de chocolate");
+                System.out.println("9. Salir");
                 System.out.print("Seleccione una opción: ");
                 opcion = input.nextInt();
                 System.out.print("\033[H\033[2J");
@@ -25,9 +30,24 @@ public class MenuHelados {
                         helado = "Helado de chocolate";
                         break;
                     case 3:
-                        helado = "Helado de fresa";
+                        helado = "Helado de coco";
                         break;
                     case 4:
+                        helado = "Helado de limon";
+                        break;
+                    case 5:
+                        helado = "Helado de mango";
+                        break;
+                    case 6:
+                        helado = "Helado de oreo";
+                        break;
+                    case 7:
+                        helado = "Helado de Crema y galletas";
+                        break;
+                    case 8:
+                        helado = "Helado de Chispas de chocolate";
+                        break;
+                    case 9:
                         System.out.println("Gracias por visitarnos. ¡Vuelva pronto!");
                         helado = "";
                         break;
@@ -39,7 +59,7 @@ public class MenuHelados {
                 if(!helado.isEmpty()) {
                     System.out.println("Usted seleccionó: " + helado);
                 }
-            } while (opcion != 4);
+            } while (opcion != 9);
         }
     }
 }
